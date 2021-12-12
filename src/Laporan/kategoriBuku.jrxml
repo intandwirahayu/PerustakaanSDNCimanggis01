@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="77f37685-5c66-450b-8a70-7ae3bf307aa2">
+	<property name="ireport.zoom" value="1.4641000000000066"/>
+	<property name="ireport.x" value="7"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kondisi" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     kategori_buku.`kode_kategori` AS kategori_buku_kode_kategori,
+     kategori_buku.`nama_kategori` AS kategori_buku_nama_kategori,
+     kategori_buku.`kode_awal_kategori` AS kategori_buku_kode_awal_kategori,
+     kategori_buku.`jenjang_kelas` AS kategori_buku_jenjang_kelas,
+     kategori_buku.`jumlah_awal` AS kategori_buku_jumlah_awal,
+     kategori_buku.`jumlah_dipinjam` AS kategori_buku_jumlah_dipinjam,
+     kategori_buku.`sisa_buku` AS kategori_buku_sisa_buku,
+     kategori_buku.`tanggal_input` AS kategori_buku_tanggal_input
+FROM 
+     `kategori_buku` kategori_buku
+WHERE 
+     kategori_buku.`tanggal_input` LIKE $P{kondisi}]]>
+	</queryString>
+	<field name="kategori_buku_kode_kategori" class="java.lang.String"/>
+	<field name="kategori_buku_nama_kategori" class="java.lang.String"/>
+	<field name="kategori_buku_kode_awal_kategori" class="java.lang.String"/>
+	<field name="kategori_buku_jenjang_kelas" class="java.lang.String"/>
+	<field name="kategori_buku_jumlah_awal" class="java.lang.Integer"/>
+	<field name="kategori_buku_jumlah_dipinjam" class="java.lang.Integer"/>
+	<field name="kategori_buku_sisa_buku" class="java.lang.Integer"/>
+	<field name="kategori_buku_tanggal_input" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="93" y="0" width="368" height="52" uuid="370e997d-69bc-43f9-9208-4ef5117a7aaa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="24"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI CIMANGGIS 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="34" width="368" height="32" uuid="163621cd-b2d8-4ba2-bdac-035def591c72"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[ Jalan Raya Tonjong Kab. Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="52" width="368" height="22" uuid="89bbe509-5b38-4f66-9d04-130fced939ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[Kelurahan/Desa Cimanggis, Kecamatan Bojong Gede, Kode Pos 16320]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" uuid="d8c2757c-48db-4aa9-99f0-28f72ea64176"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="34" width="79" height="27" uuid="2eb8f894-6202-481d-9b3a-2cb963c71360"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="34" width="79" height="27" uuid="5106e41d-0f09-4830-9588-cb781e1774bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[kode kategori]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="79" y="34" width="79" height="27" uuid="697962ac-cd46-495c-89cc-fe0b77bb889d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="79" y="34" width="79" height="27" uuid="ab2ae59d-27a4-41f9-94fb-14fbc2210569"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[nama kategori]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="158" y="34" width="59" height="27" uuid="bd242bd2-0e87-45d3-b25b-3c98b13447bd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="158" y="34" width="59" height="27" uuid="eb043293-b3b0-48a5-bda4-2d0835a0b56f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[kode awal]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="217" y="34" width="79" height="27" uuid="56bc0d72-d6d2-4e44-b2d2-125403fa6c40"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="217" y="34" width="79" height="27" uuid="f0ae2216-db35-4e74-911f-793d3cb4f893"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[jenjang kelas]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="296" y="34" width="58" height="27" uuid="138d5f18-309e-4680-a865-e68f8ff68aa7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="296" y="34" width="58" height="27" uuid="622a7783-fd2c-499e-8fc4-8768af478fc7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[jml awal]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="354" y="34" width="79" height="27" uuid="2c450a06-97e5-4782-9c15-de01a70133b6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="354" y="34" width="79" height="27" uuid="1c8bede1-ddd2-46f7-ab6a-f5d674487f5a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[jml dipinjam]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="433" y="34" width="55" height="27" uuid="905cb57d-2940-44d9-ae12-282cac40d671"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="34" width="55" height="27" uuid="59c20840-083f-4f48-96e1-e39093f5dba0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[sisa buku]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="488" y="34" width="67" height="27" uuid="52fbe26a-3313-4830-b242-3fadc54726db"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="488" y="34" width="67" height="27" uuid="cd63e300-fad7-488d-a03a-62970e52a573"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[tgl input]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="79" height="24" uuid="4141b59a-e4f8-43af-93ea-a0ea5dbcfbc9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="79" height="24" uuid="836c874d-cd58-462b-b8fa-d75bf5efc8cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_kode_kategori}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="79" y="0" width="79" height="24" uuid="44e1e71f-bd24-4805-89f9-f177f80c9934"/>
+			</rectangle>
+			<textField>
+				<reportElement x="79" y="0" width="79" height="24" uuid="99a2bedc-4c26-48b1-8386-468508e94055"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_nama_kategori}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="158" y="0" width="59" height="24" uuid="80541aec-35d5-45f6-8ca1-6ab2a4ffe21e"/>
+			</rectangle>
+			<textField>
+				<reportElement x="158" y="0" width="59" height="24" uuid="914e7a2a-8358-4b14-a426-1284307a67da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_kode_awal_kategori}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="217" y="0" width="79" height="24" uuid="abc40b99-6b1c-414c-8ab5-38784caae2bd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="217" y="0" width="79" height="24" uuid="2aa24a98-974a-4806-8094-c399608a4ab8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_jenjang_kelas}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="296" y="0" width="58" height="24" uuid="12768360-ceb3-4c57-b37a-b67e7ed060b1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="296" y="0" width="58" height="24" uuid="47394f86-ad2b-4420-afe0-aefaf1d5736a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_jumlah_awal}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="354" y="0" width="79" height="24" uuid="7cfea400-d298-4285-b661-ecd630882838"/>
+			</rectangle>
+			<textField>
+				<reportElement x="354" y="0" width="79" height="24" uuid="3df24c71-f051-4cf2-91f3-bbd6283529c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_jumlah_dipinjam}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="433" y="0" width="55" height="24" uuid="e7659e38-cade-4082-983a-18b74c72dfe1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="433" y="0" width="55" height="24" uuid="549a55b4-ee2a-4f7d-be16-ec9485c2c2f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_sisa_buku}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="488" y="0" width="67" height="24" uuid="151bc0f3-a264-48bb-b4a4-284697a14bcd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="488" y="0" width="67" height="24" uuid="f899c482-37f1-4825-ba5b-3d6cdca912a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kategori_buku_tanggal_input}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

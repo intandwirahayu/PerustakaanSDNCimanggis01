@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="44b11456-ce48-4848-85cc-541927214fcd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kondisi" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     detail_anggota.`kode_anggota` AS detail_anggota_kode_anggota,
+     detail_anggota.`nama_anggota` AS detail_anggota_nama_anggota,
+     detail_anggota.`tgl_lahir` AS detail_anggota_tgl_lahir,
+     detail_anggota.`alamat` AS detail_anggota_alamat,
+     detail_anggota.`tgl_daftar` AS detail_anggota_tgl_daftar
+FROM
+     `detail_anggota` detail_anggota 
+WHERE detail_anggota.`tgl_daftar` LIKE $P{kondisi}]]>
+	</queryString>
+	<field name="detail_anggota_kode_anggota" class="java.lang.String"/>
+	<field name="detail_anggota_nama_anggota" class="java.lang.String"/>
+	<field name="detail_anggota_tgl_lahir" class="java.sql.Date"/>
+	<field name="detail_anggota_alamat" class="java.lang.String"/>
+	<field name="detail_anggota_tgl_daftar" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="93" y="0" width="368" height="52" uuid="4d34000d-907c-42a3-a048-c572db1743d8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="24"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI CIMANGGIS 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="34" width="368" height="32" uuid="ed2e47a0-ea08-41af-b661-80d17a058473"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[ Jalan Raya Tonjong Kab. Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="52" width="368" height="22" uuid="a7d8148e-e857-4348-a4de-716c7c996f08"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[Kelurahan/Desa Cimanggis, Kecamatan Bojong Gede, Kode Pos 16320]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" uuid="47b86e6e-1336-4111-b6ff-4f82c89fce87"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="49" uuid="c16c2383-82ad-4ee3-b625-e89fabcde687"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="100" y="0" width="120" height="50" uuid="e7bef6d3-36f6-47bc-832b-6fd19b4f15c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Anggota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="110" height="50" uuid="79aa4b96-6fd3-44d7-8918-8e285657bd69"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="125" height="50" uuid="f756e39a-5f02-42dd-987a-0ae9c7aa1293"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="50" uuid="d0e9050b-7b32-4cb6-af62-d06c55d0615c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Daftar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="50" uuid="09ef27c2-708b-4267-8769-09975f917e63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Anggota]]></text>
+			</staticText>
+			<line>
+				<reportElement x="100" y="0" width="1" height="50" uuid="edface86-1570-4f9c-be29-8ff54e7d1c4c"/>
+			</line>
+			<line>
+				<reportElement x="220" y="0" width="1" height="50" uuid="54db22c4-3077-45eb-9cc3-542f0690a6f2"/>
+			</line>
+			<line>
+				<reportElement x="330" y="0" width="1" height="50" uuid="4715fdd2-3838-47a8-854f-e9bac1254b8d"/>
+			</line>
+			<line>
+				<reportElement x="455" y="0" width="1" height="50" uuid="13cea1d6-eca3-462f-bfdd-53d8cec5cf1d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="40" uuid="8779c2b5-06ff-41db-9d9a-5a2b6ce27b86"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="40" uuid="6b51798c-0567-4716-9574-adc99f7622ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_kode_anggota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="120" height="40" uuid="55bef45d-2b95-4a1d-99b6-b01367e7ae2c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_nama_anggota}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="220" y="0" width="110" height="40" uuid="3bd79b15-cb00-4b55-8bbf-1da5d7af4925"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="125" height="40" uuid="9de1d8d7-b941-43fc-97ab-907b19663514"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_alamat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="0" width="100" height="40" uuid="f618dab9-2998-44f1-a072-e2bfb9806dae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_tgl_daftar}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="100" y="0" width="1" height="40" uuid="97f24bb0-c9d7-4cc4-85ea-4a5dd2f55892"/>
+			</line>
+			<line>
+				<reportElement x="220" y="0" width="1" height="40" uuid="85cc885e-de66-4794-a23a-03c8a8ecf1fd"/>
+			</line>
+			<line>
+				<reportElement x="330" y="0" width="1" height="40" uuid="4d134f2d-10cd-44a3-88b4-b1daee30af17"/>
+			</line>
+			<line>
+				<reportElement x="455" y="0" width="1" height="40" uuid="19d4e32d-95be-4ca9-9803-522ac593dc21"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="72" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ce40a8c-7591-47ff-aa28-7c0e75789776">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kondisi" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     peminjaman_buku.`kode_peminjaman` AS peminjaman_buku_kode_peminjaman,
+     peminjaman_buku.`kode_petugas` AS peminjaman_buku_kode_petugas,
+     peminjaman_buku.`kode_buku` AS peminjaman_buku_kode_buku,
+     peminjaman_buku.`kode_anggota` AS peminjaman_buku_kode_anggota,
+     peminjaman_buku.`waktu_pinjam` AS peminjaman_buku_waktu_pinjam,
+     peminjaman_buku.`tgl_peminjaman` AS peminjaman_buku_tgl_peminjaman,
+     peminjaman_buku.`tgl_batas_peminjaman` AS peminjaman_buku_tgl_batas_peminjaman,
+peminjaman_buku.`tgl_input` AS peminjaman_buku_tgl_input
+FROM
+     `peminjaman_buku` peminjaman_buku
+WHERE peminjaman_buku.`tgl_input` LIKE $P{kondisi} or peminjaman_buku.`tgl_peminjaman` LIKE $P{kondisi}]]>
+	</queryString>
+	<field name="peminjaman_buku_kode_peminjaman" class="java.lang.String"/>
+	<field name="peminjaman_buku_kode_petugas" class="java.lang.String"/>
+	<field name="peminjaman_buku_kode_buku" class="java.lang.String"/>
+	<field name="peminjaman_buku_kode_anggota" class="java.lang.String"/>
+	<field name="peminjaman_buku_waktu_pinjam" class="java.lang.String"/>
+	<field name="peminjaman_buku_tgl_peminjaman" class="java.sql.Date"/>
+	<field name="peminjaman_buku_tgl_batas_peminjaman" class="java.sql.Date"/>
+	<field name="peminjaman_buku_tgl_input" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="db164273-a5ff-4fc9-b8a6-411cffa94ea9" x="108" y="0" width="368" height="52"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="24"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI CIMANGGIS 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="430bcd7c-90ba-4487-add8-49a21fb2927f" x="108" y="39" width="368" height="32"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[ Jalan Raya Tonjong Kab. Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1cfe05c5-7fb0-4785-9f52-7e2f646ea545" x="108" y="59" width="368" height="22"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[Kelurahan/Desa Cimanggis, Kecamatan Bojong Gede, Kode Pos 16320]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8ade9fd3-8fc0-4743-ad04-66f4b4827707" x="0" y="88" width="555" height="1"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="36d1e7fa-d43b-4afc-baa9-6d1575d80958" x="2" y="2" width="555" height="42"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="6506a293-8c69-44bf-9ae1-5dee19d5155f" x="3" y="5" width="90" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Kode Peminjaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6cf647-38dd-4790-9397-80ee58249abf" x="102" y="5" width="53" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Kode Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="97bbf2fb-d7cd-405f-8f34-29c10e8e35d1" x="179" y="5" width="48" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="55202da8-1034-423d-b09e-30d145b89e80" x="242" y="5" width="65" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Kode Anggota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9006e43c-80fe-4b99-a7d5-b1166348457f" x="314" y="5" width="66" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Waktu Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="01282d27-5983-4dbd-b471-47dd3ac97f86" x="384" y="5" width="92" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Tanggal Awal Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="02aaf398-1a2b-4d81-9af1-accb56156510" x="480" y="5" width="79" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<text><![CDATA[Tanggal Batas Pinjam]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e0db9a12-af65-4aa1-a539-a5ac1c83cffd" x="476" y="3" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement uuid="11207df5-95d8-4edc-af2e-58b2cf56af24" x="386" y="2" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement uuid="4f2dc6ac-fb5a-4fb3-a859-fa0e8e3cd596" x="305" y="3" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement uuid="63be84e9-a391-4b5d-9d4e-704e52379738" x="240" y="3" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement uuid="617f4fad-849e-454b-b949-15424a404702" x="162" y="2" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement uuid="d092c441-121b-4756-bfc9-e76591a4e567" x="93" y="3" width="1" height="41"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f1973ac5-e643-4b68-94cf-9ee36e763669" x="2" y="-2" width="555" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="40a44ad9-149a-4eae-af71-b0dd233cedb6" x="3" y="0" width="90" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_kode_peminjaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1fa1efab-de1d-4426-9c47-13ffe17f636d" x="93" y="0" width="69" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_kode_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f4da85aa-6a7d-412a-9326-2892b45be3a9" x="162" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_kode_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6aae3cc9-7b42-40f0-8e22-bd2c5e757a0e" x="241" y="0" width="65" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_kode_anggota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="224562ca-3aed-4329-986a-3c1fa4aad0fb" x="305" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_waktu_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="ec99254a-9fdd-4523-a5ee-80eea08438b5" x="384" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_tgl_batas_peminjaman}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="114a2f47-8e20-43c5-aff0-5fbecfcfd766" x="478" y="0" width="77" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peminjaman_buku_tgl_peminjaman}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="3c4f5ded-65de-4ae7-8428-d6f039b13386" x="93" y="-2" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="fd7d6e55-6c6c-4506-9fc5-641d63527bc7" x="162" y="-2" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="27ffc381-a170-47f0-83a5-511e762f9bd6" x="240" y="-1" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="ef4bfb76-f78c-46fb-ab0f-29277781d8f2" x="305" y="-3" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="de9325b4-93c1-444c-ba43-c24841c6b336" x="386" y="-3" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="23be8f26-cd7f-457c-89c0-d0a13f8abbca" x="476" y="-2" width="1" height="20"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="126" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="44" splitType="Stretch"/>
+	</summary>
+</jasperReport>

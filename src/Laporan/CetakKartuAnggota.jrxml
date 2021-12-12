@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="75d2bebf-f0fc-4890-bd78-12c9bb50ee0f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="1caaf4d4-ef96-4847-9b5d-c6b2764ce812"/>
+	<subDataset name="Table Dataset 2" uuid="23afaf1a-79ae-44e2-aac4-41598c74f9c1"/>
+	<subDataset name="Table Dataset 3" uuid="fc799c5b-9334-41f7-a0f5-3eba53d9edb1"/>
+	<subDataset name="Table Dataset 4" uuid="9c25f144-4185-40e2-b821-30cd34daf1ed"/>
+	<subDataset name="Table Dataset 5" uuid="2977b47f-ff8b-4984-bf44-0879b3f4d6ff"/>
+	<subDataset name="Table Dataset 6" uuid="bf66843c-2722-403f-ae3f-7d8a29819d9e"/>
+	<subDataset name="Table Dataset 7" uuid="38badf2e-5f47-48d9-9cc7-95137707ce2d"/>
+	<subDataset name="Table Dataset 8" uuid="e518c0e2-ee34-46af-a856-6d5801e2a61e"/>
+	<subDataset name="Table Dataset 9" uuid="fd401582-0e3b-4539-8763-057880e293d0"/>
+	<parameter name="kode" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     detail_anggota.`kode_anggota` AS detail_anggota_kode_anggota,
+     detail_anggota.`nama_anggota` AS detail_anggota_nama_anggota,
+     detail_anggota.`tgl_lahir` AS detail_anggota_tgl_lahir,
+     detail_anggota.`alamat` AS detail_anggota_alamat
+FROM
+     `detail_anggota` detail_anggota where detail_anggota.`kode_anggota` = $P{kode}]]>
+	</queryString>
+	<field name="detail_anggota_kode_anggota" class="java.lang.String"/>
+	<field name="detail_anggota_nama_anggota" class="java.lang.String"/>
+	<field name="detail_anggota_tgl_lahir" class="java.sql.Date"/>
+	<field name="detail_anggota_alamat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="99" y="0" width="368" height="52" uuid="ae887212-c646-4a0a-9565-0cb85752d3de"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="24"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI CIMANGGIS 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="37" width="368" height="32" uuid="97cd3b0c-7265-4a84-aaad-f5e552fda8e6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[ Jalan Raya Tonjong Kab. Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="57" width="368" height="22" uuid="e927c1ff-80c0-4638-855a-e0aeaa91c0c0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[Kelurahan/Desa Cimanggis, Kecamatan Bojong Gede, Kode Pos 16320]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" uuid="e9ec822c-bae4-4053-8d0b-eb501efdb62e"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="152" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="30" uuid="64deaa81-c447-4640-ae99-1fa57e975158"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Anggota	:		]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="138" height="30" uuid="a937a84f-b405-4cd9-a571-644d391f1284"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Anggota	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="138" height="30" uuid="7fecfa61-9ed7-4170-b9ac-ca5f18e7c4f1"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Lahir	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="138" height="40" uuid="420a7605-b88e-49a6-9ff8-afa7f647c7da"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat		:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="0" width="230" height="30" uuid="848823b3-9aca-4bd3-af59-f1dfcb5e0149"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_kode_anggota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="30" width="230" height="30" uuid="b79863d9-0a43-4c1b-9cc4-e1d2f23419a9"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_nama_anggota}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="159" y="60" width="230" height="30" uuid="e6f8afc0-efe8-4aa2-86ad-94045f027747"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="90" width="230" height="40" uuid="62e3dbe4-c235-4653-af2a-d963e68d9221"/>
+				<textElement>
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_anggota_alamat}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="146" width="555" height="1" uuid="e23f3e08-9237-44e5-8bf0-30edaf54f1d0"/>
+			</line>
+			<rectangle>
+				<reportElement x="420" y="0" width="100" height="110" uuid="4627e7f7-cae0-4ea7-a002-584411952a86"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="420" y="0" width="100" height="110" uuid="c732cc72-f118-4959-8568-e0d67ad312a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[Foto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="504">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="490" uuid="fbebc50d-2786-4716-9d89-3f3fda6dad98"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="2796a5d0-abb7-44bc-a7cc-849a9b45b11d"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="30" height="50" uuid="746f65a4-c53d-4d24-9aa8-cee092f544be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="1" width="80" height="50" uuid="cf7efb45-e916-4688-8fea-f54a78caddd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Peminjaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="0" width="80" height="50" uuid="63a0bb44-a20c-406a-b9f1-0adbb7fc4c43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="0" width="80" height="50" uuid="65d0d422-3e11-4be3-9f56-4c5365bb0994"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="0" width="90" height="50" uuid="dd996588-739e-4e53-b535-28d66aa40b9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="0" width="80" height="50" uuid="0dae6c68-8eb9-4739-8df1-959443e911b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="1" width="60" height="50" uuid="43b3df26-e4fc-441b-a3e3-c0ad6a0cb7f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Kondisi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="1" width="60" height="50" uuid="f0f23678-3b8b-4f41-9410-f7bdea2e4430"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Poppins" size="12"/>
+				</textElement>
+				<text><![CDATA[Paraf]]></text>
+			</staticText>
+			<line>
+				<reportElement x="28" y="0" width="1" height="491" uuid="70f92cad-f97e-4e52-a60e-475e87d947fd"/>
+			</line>
+			<line>
+				<reportElement x="107" y="0" width="1" height="491" uuid="f541f1fc-cc95-4aba-b274-d6d7e8652a46"/>
+			</line>
+			<line>
+				<reportElement x="186" y="0" width="1" height="491" uuid="898103f3-5857-47ad-ae46-ad3509e661e1"/>
+			</line>
+			<line>
+				<reportElement x="265" y="0" width="1" height="491" uuid="d6ff989d-db80-42d4-9b9a-687862a779af"/>
+			</line>
+			<line>
+				<reportElement x="355" y="0" width="1" height="491" uuid="486fbf9b-a860-4859-96b4-311e3616c8f5"/>
+			</line>
+			<line>
+				<reportElement x="435" y="0" width="1" height="491" uuid="717620cb-02e9-4c14-b2df-a6db1ce21457"/>
+			</line>
+			<line>
+				<reportElement x="495" y="0" width="1" height="491" uuid="4e93e104-f6e7-454f-a168-2442928c52e8"/>
+			</line>
+			<line>
+				<reportElement x="0" y="90" width="555" height="1" uuid="ba324a51-ea11-475a-9eee-7a6148518781"/>
+			</line>
+			<line>
+				<reportElement x="0" y="130" width="555" height="1" uuid="db907aef-6e17-4e61-97d8-f136649a2e4d"/>
+			</line>
+			<line>
+				<reportElement x="0" y="170" width="555" height="1" uuid="cc88defa-9a2b-4db9-b497-ac6c8e486daa"/>
+			</line>
+			<line>
+				<reportElement x="0" y="210" width="555" height="1" uuid="4540b65c-f06b-4bab-8bce-0d21b9bd97ca"/>
+			</line>
+			<line>
+				<reportElement x="0" y="250" width="555" height="1" uuid="8b70c4b8-eaf7-4118-8f9c-6ee8f6aa7ee6"/>
+			</line>
+			<line>
+				<reportElement x="0" y="290" width="555" height="1" uuid="33ff1e71-d588-4227-85fd-67d886bb43fc"/>
+			</line>
+			<line>
+				<reportElement x="0" y="330" width="555" height="1" uuid="160f3f61-cd89-462e-9d5a-0adaaf0c53e7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="370" width="555" height="1" uuid="381dcbd4-a970-42b9-9c24-e918edf75f66"/>
+			</line>
+			<line>
+				<reportElement x="0" y="410" width="555" height="1" uuid="52845744-9874-4dd6-8099-783e3d1fd544"/>
+			</line>
+			<line>
+				<reportElement x="0" y="450" width="555" height="1" uuid="fbce360e-2729-4117-a008-d74ec7529623"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="16" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="8" splitType="Stretch"/>
+	</summary>
+</jasperReport>

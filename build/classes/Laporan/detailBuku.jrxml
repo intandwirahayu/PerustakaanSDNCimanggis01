@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="52804baf-8083-409d-917e-6166d81d690d">
+	<property name="ireport.zoom" value="1.3310000000000106"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kondisi" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     detail_buku.`kode_buku` AS detail_buku_kode_buku,
+     detail_buku.`kode_kategori` AS detail_buku_kode_kategori,
+     detail_buku.`judul_buku` AS detail_buku_judul_buku,
+     detail_buku.`penulis` AS detail_buku_penulis,
+     detail_buku.`penerbit` AS detail_buku_penerbit,
+     detail_buku.`status_buku` AS detail_buku_status_buku,
+     detail_buku.`tanggal_input` AS detail_buku_tanggal_input
+FROM
+     `detail_buku` detail_buku
+WHERE detail_buku.`tanggal_input` LIKE $P{kondisi}]]>
+	</queryString>
+	<field name="detail_buku_kode_buku" class="java.lang.String"/>
+	<field name="detail_buku_kode_kategori" class="java.lang.String"/>
+	<field name="detail_buku_judul_buku" class="java.lang.String"/>
+	<field name="detail_buku_penulis" class="java.lang.String"/>
+	<field name="detail_buku_penerbit" class="java.lang.String"/>
+	<field name="detail_buku_status_buku" class="java.lang.String"/>
+	<field name="detail_buku_tanggal_input" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="93" y="0" width="368" height="52" uuid="f1ff6c39-5c38-48bc-80c8-984c91d52115"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="24"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI CIMANGGIS 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="34" width="368" height="32" uuid="a582d2c5-bd81-4ca6-a01d-0076bddf1fa1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[ Jalan Raya Tonjong Kab. Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="52" width="368" height="22" uuid="ecd2fc95-cafd-45e2-a6a2-2391aa577e1e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Poppins SemiBold" size="10"/>
+				</textElement>
+				<text><![CDATA[Kelurahan/Desa Cimanggis, Kecamatan Bojong Gede, Kode Pos 16320]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" uuid="40fe79f7-64f3-4612-8148-d0d52afc4075"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="35" width="79" height="26" uuid="8d96b902-aaf5-461f-ba65-af31ad958b98"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="35" width="79" height="26" uuid="0f76cbfe-1581-4bb7-88d0-40a1b9506bbf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[kode buku]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="79" y="35" width="79" height="26" uuid="2550cadd-7db8-419f-abb6-6c12c11edc9d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="79" y="35" width="79" height="25" uuid="07ed8c1c-e439-4f99-8a86-c680df400456"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[kode kategori]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="158" y="35" width="79" height="26" uuid="83edcf01-6bf0-420a-9dcd-d17858f75cad"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="158" y="35" width="79" height="25" uuid="fbe0aa1d-3680-4cae-81e8-13829cf5e726"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[judul buku]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="237" y="35" width="79" height="26" uuid="e02e778c-1a2d-412d-b255-3a7f936baf9a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="237" y="35" width="79" height="25" uuid="2a93146e-13cd-4e4d-830c-b2f33a0a1d62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[penulis]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="316" y="35" width="79" height="26" uuid="9fb629c5-dbb2-4d08-81a7-243a08247980"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="316" y="35" width="79" height="25" uuid="82a84e3f-d1fe-4737-b1d0-3cc0d750a7f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[penerbit]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="395" y="35" width="79" height="26" uuid="d00fd99c-5896-4c92-bfbc-b796d84fef17"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="395" y="35" width="79" height="25" uuid="2b11b76b-46ed-48ca-a74d-eb3a3968ba60"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[status buku]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="474" y="35" width="81" height="26" uuid="b2722551-a8d7-4d54-aa19-29cda09d3c4c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="474" y="35" width="81" height="25" uuid="055c08ca-08d0-47b7-9c06-774af3256b3a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<text><![CDATA[tanggal input]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="79" height="24" uuid="98474e82-5651-42f3-858c-4b5a59ef8e23"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="79" height="24" uuid="bcaab17f-eaeb-4784-bb9f-275a05d0c76a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_kode_buku}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="79" y="0" width="79" height="24" uuid="c26730f7-a610-4062-afc2-cabe6beb444e"/>
+			</rectangle>
+			<textField>
+				<reportElement x="79" y="0" width="79" height="24" uuid="8006708d-67e6-4527-82c1-9ff35131544b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_kode_kategori}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="158" y="0" width="79" height="24" uuid="5aefc01b-c656-4422-b8d8-43b07c05f5ca"/>
+			</rectangle>
+			<textField>
+				<reportElement x="158" y="0" width="79" height="24" uuid="ff2eaa9b-e201-4f56-9587-d2413ca74257"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_judul_buku}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="237" y="0" width="79" height="24" uuid="6bb362eb-cdb4-4c72-ac6b-662330f910f8"/>
+			</rectangle>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="24" uuid="23d3491a-8977-4f6b-a0b1-d99f1500b02b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_penulis}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="316" y="0" width="79" height="24" uuid="d00a3757-4d1f-4082-a537-ea2c00c676f0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="395" y="0" width="79" height="24" uuid="2d4c3b7b-98be-4f99-82c5-98c6f9991a24"/>
+			</rectangle>
+			<textField>
+				<reportElement x="395" y="0" width="79" height="24" uuid="ec59272d-8fa0-4828-b2ba-f476f109fdbc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_status_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="79" height="24" uuid="f2a00d5d-32a6-4279-a85f-e8fe04eebfd5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_penerbit}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="474" y="0" width="81" height="24" uuid="c6f44eb1-c4b0-4db0-8d90-2f267c2e5c57"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="474" y="0" width="79" height="24" uuid="5b13e359-924e-4539-91fe-29fd70a9c70a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detail_buku_tanggal_input}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
